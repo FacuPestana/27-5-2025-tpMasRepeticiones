@@ -33,9 +33,28 @@ for (let i = 0; i < datos.length; i++) {
 
 console.log(resultado);
 
-//5
+/*
 
-let contador = 0 
-let busqueda = nombr
+let alumnos = ["Sofía", "Carlos", "Bruno", "Lucía", "Carla"];
+let nombreBuscado = prompt("Ingresá un nombre para buscar en la lista de alumnos:");
+if (alumnos.includes(nombreBuscado)) {
+  console.log("✅ El nombre se encontró en la lista.");
+} else {
+  console.log("❌ El nombre no se encontró en la lista.");
+}
+*/
 //6
 let valores = [5, 0, 8, 0, 2];
+let nuevoArreglo = valores.map(valor => valor === 0 ? 100 : valor);
+console.log(nuevoArreglo);
+//10?? En realidad 7
+
+let notas = [8, 7, 9,  10, 6];
+function calcularPromedio(notas) {
+  let sumaNotas = 0;
+  for (let i = 0; i < notas.length; i++) {
+    sumaNotas += notas[i];
+  }
+
+console.log('El promedio de las notas es de '+sumaNotas/ notas.length);
+}
